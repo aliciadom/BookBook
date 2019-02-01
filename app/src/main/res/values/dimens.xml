@@ -2,4 +2,8 @@
 <resources>
     <dimen name="activity_horizontal_margin">10dp</dimen>
     <dimen name="activity_vertical_margin">10dp</dimen>
+    <dimen name="profilePicture_width_port">250dp</dimen>
+    <dimen name="profilePicture_height_port">250dp</dimen>
+    <dimen name="profilePicture_width_land">250dp</dimen>
+    <dimen name="profilePicture_height_land">250dp</dimen>
 </resources>
