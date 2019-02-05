@@ -39,6 +39,8 @@ public class ShowProfileActivity extends AppCompatActivity {
         textView_email = findViewById(R.id.textView_email);
         textView_bio =  findViewById(R.id.textView_bio);
         imageView_profilePicture = findViewById(R.id.imageView_profilePicture);
+
+        /*test to check new branch*/
     }
 
     @Override
