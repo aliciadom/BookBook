@@ -3,4 +3,5 @@
     <string name="name">Nome</string>
     <string name="email">E-mail</string>
     <string name="bio">Piccola Biografia</string>
+    <string name="camera_error_message">Camera non utilizzabile</string>
 </resources>

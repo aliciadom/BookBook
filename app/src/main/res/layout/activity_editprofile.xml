@@ -39,4 +39,21 @@
         android:text="@string/bio"
         android:layout_below="@id/editText_email"/>
 
+    <Button
+        android:id="@+id/button_takePicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_bio"
+        android:onClick="takePictureFromCamera"
+        android:text=" take new \n picture" />
+
+    <Button
+        android:id="@+id/button_selectPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_bio"
+        android:layout_toRightOf="@id/button_takePicture"
+        android:onClick="selectPictureFromGallery"
+        android:text=" select from \n gallery" />
+
 </RelativeLayout>
