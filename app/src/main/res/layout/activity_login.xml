@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:text="@string/email"/>
+        android:hint="@string/email"/>
 
     <EditText
         android:id="@+id/editText_password"
@@ -32,6 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/login"
+        android:onClick="login"
         android:layout_below="@id/editText_password"/>
 
     <Button
@@ -39,6 +40,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/signin"
+        android:onClick="signin"
         android:layout_below="@id/button_login"/>
 
 </RelativeLayout>

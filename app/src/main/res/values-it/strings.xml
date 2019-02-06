@@ -7,4 +7,6 @@
     <string name="signin">Registrati</string>
     <string name="bio">Piccola Biografia</string>
     <string name="camera_error_message">Camera non utilizzabile</string>
+    <string name="emptyfields">Username o password vuoti</string>
+    <string name="signinerror">Registrazione fallita</string>
 </resources>

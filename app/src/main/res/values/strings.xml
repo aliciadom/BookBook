@@ -7,4 +7,6 @@
     <string name="signin">Sign In</string>
     <string name="bio">Short-Bio</string>
     <string name="camera_error_message">Unable to use the camera</string>
+    <string name="emptyfields">Username o password empty</string>
+    <string name="signinerror">Registration failed</string>
 </resources>
