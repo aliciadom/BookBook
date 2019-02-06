@@ -2,6 +2,9 @@
     <string name="app_name">BookBook</string>
     <string name="name">Name</string>
     <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="signin">Sign In</string>
     <string name="bio">Short-Bio</string>
     <string name="camera_error_message">Unable to use the camera</string>
 </resources>
