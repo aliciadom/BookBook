@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import butterknife.BindView;
 import it.polito.bookbook.R;
 
 public class ShowProfileActivity extends AppCompatActivity {
@@ -22,25 +23,17 @@ public class ShowProfileActivity extends AppCompatActivity {
     private static final String sharedPrefFile = "it.polito.bookbook";
     static final int REQUEST_EDITPROFILE = 0;
     private SharedPreferences mPreferences;
-    private TextView
-            textView_name,
-            textView_email,
-            textView_bio;
-    private ImageView imageView_profilePicture;
+
+    @BindView(R.id.textView_name) private TextView textView_name;
+    @BindView(R.id.textView_email) private TextView textView_email;
+    @BindView(R.id.textView_bio) private TextView textView_bio;
+    @BindView(R.id.imageView_profilePicture) private ImageView imageView_profilePicture;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_showprofile);
-
         mPreferences = getSharedPreferences(sharedPrefFile, MODE_PRIVATE);
-
-        textView_name = findViewById(R.id.textView_name);
-        textView_email = findViewById(R.id.textView_email);
-        textView_bio =  findViewById(R.id.textView_bio);
-        imageView_profilePicture = findViewById(R.id.imageView_profilePicture);
-
-        /*test to check new branch cherry*/
     }
 
     @Override
