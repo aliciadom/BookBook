@@ -40,7 +40,7 @@ public class ShowProfileActivity extends AppCompatActivity {
         textView_bio =  findViewById(R.id.textView_bio);
         imageView_profilePicture = findViewById(R.id.imageView_profilePicture);
 
-        /*test to check new branch*/
+        /*test to check new branch cherry*/
     }
 
     @Override
