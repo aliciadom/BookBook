@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "681588149670",
+    "firebase_url": "https://bookbook-42395.firebaseio.com",
+    "project_id": "bookbook-42395",
+    "storage_bucket": "bookbook-42395.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:681588149670:android:c37555cb62c0c176",
+        "android_client_info": {
+          "package_name": "it.polito.bookbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "681588149670-pksm62d8pectn1uc0q25toa7kgpqjhch.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "it.polito.bookbook",
+            "certificate_hash": "d11bc5bea4901a4339fed0c707ace069be579bb7"
+          }
+        },
+        {
+          "client_id": "681588149670-5oht9glnnp7eg6i19l8okrken4r8v6lm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGfs9PXsDixRYrWb6qhWkrzx5H3Cj0__w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "681588149670-5oht9glnnp7eg6i19l8okrken4r8v6lm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
