@@ -8,8 +8,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
-import android.support.v4.content.FileProvider;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -24,10 +22,11 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import butterknife.BindView;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.FileProvider;
 import it.polito.bookbook.R;
 
-public class EditProfileActivity extends AppCompatActivity{
+public class EditProfileActivity extends AppCompatActivity {
 
     static final int REQUEST_IMAGE_CAPTURE = 1;
     static final int REQUEST_IMAGE_GALLERY = 2;
@@ -36,10 +35,10 @@ public class EditProfileActivity extends AppCompatActivity{
     private Uri profilePictureUri = null;
     private SharedPreferences mPreferences;
 
-    @BindView(R.id.editText_name) private EditText editText_name;
-    @BindView(R.id.editText_name) private EditText editText_email;
-    @BindView(R.id.editText_bio) private EditText editText_bio;
-    @BindView(R.id.imageView_profilePicture) private ImageView imageView_profilePicture;
+    private EditText editText_name;
+    private EditText editText_email;
+    private EditText editText_bio;
+    private ImageView imageView_profilePicture;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +47,11 @@ public class EditProfileActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_editprofile);
         mPreferences = getSharedPreferences(sharedPrefFile, MODE_PRIVATE);
+
+        editText_name = findViewById(R.id.editText_name);
+        editText_email = findViewById(R.id.editText_email);
+        editText_bio = findViewById(R.id.editText_bio);
+        imageView_profilePicture = findViewById(R.id.imageView_profilePicture);
 
         name = mPreferences.getString("NAME",getResources().getString(R.string.name));
         email = mPreferences.getString("EMAIL",getResources().getString(R.string.email));
